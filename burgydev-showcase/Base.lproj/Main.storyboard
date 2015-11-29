@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,26 +28,187 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXw-1g-ftz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMD-AE-7Rq">
+                                        <rect key="frame" x="20" y="33" width="148" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4LZ-xe-r4L"/>
+                                            <constraint firstAttribute="width" constant="148" id="Kod-Ih-3pO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code-icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-EJ-L9d">
+                                        <rect key="frame" x="547" y="30" width="33" height="33"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="dSy-nY-AJ1"/>
+                                            <constraint firstAttribute="height" constant="33" id="mIo-Sb-cjq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.31764705882352939" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="AKY-uI-eoD"/>
+                                    <constraint firstItem="ZMD-AE-7Rq" firstAttribute="top" secondItem="jXw-1g-ftz" secondAttribute="top" constant="33" id="HaL-nz-qad"/>
+                                    <constraint firstAttribute="trailing" secondItem="1b7-EJ-L9d" secondAttribute="trailing" constant="20" id="Tyf-p3-ehF"/>
+                                    <constraint firstItem="ZMD-AE-7Rq" firstAttribute="leading" secondItem="jXw-1g-ftz" secondAttribute="leading" constant="20" id="hhT-sX-Lvy"/>
+                                    <constraint firstItem="1b7-EJ-L9d" firstAttribute="top" secondItem="jXw-1g-ftz" secondAttribute="top" constant="30" id="nNQ-ox-rdb"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsH-dZ-EqO">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsH-dZ-EqO" customClass="MaterialView" customModule="burgydev_showcase" customModuleProvider="target">
                                 <rect key="frame" x="20" y="75" width="560" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-WX-8gi">
+                                        <rect key="frame" x="20" y="10" width="520" height="108"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="T5x-q8-p3x">
+                                                <rect key="frame" x="0.0" y="22" width="65" height="65"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="5EO-k5-Khe"/>
+                                                    <constraint firstAttribute="height" constant="78" id="flJ-jl-Eqe"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5EO-k5-Khe"/>
+                                                        <exclude reference="flJ-jl-Eqe"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLz-pR-mHJ" customClass="MaterialButton" customModule="burgydev_showcase" customModuleProvider="target">
+                                                <rect key="frame" x="105" y="38" width="415" height="33"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="218" id="b4p-M2-DWK"/>
+                                                    <constraint firstAttribute="height" constant="44" id="lux-sR-9hi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                                <state key="normal" title="FACEBOOK LOGIN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="b4p-M2-DWK"/>
+                                                        <exclude reference="lux-sR-9hi"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="I6h-WX-8gi" secondAttribute="bottom" constant="10" id="Md6-nt-Fpb"/>
                                     <constraint firstAttribute="height" constant="128" id="Mk4-Nt-2kU"/>
+                                    <constraint firstItem="I6h-WX-8gi" firstAttribute="top" secondItem="BsH-dZ-EqO" secondAttribute="top" constant="10" id="Zp6-Rs-Rtt"/>
+                                    <constraint firstItem="I6h-WX-8gi" firstAttribute="leading" secondItem="BsH-dZ-EqO" secondAttribute="leading" constant="20" id="qW7-a7-gao"/>
+                                    <constraint firstAttribute="trailing" secondItem="I6h-WX-8gi" secondAttribute="trailing" constant="20" id="tTV-c6-mJ1"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJP-hO-bEy" customClass="MaterialView" customModule="burgydev_showcase" customModuleProvider="target">
+                                <rect key="frame" x="20" y="223" width="560" height="357"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRV-mX-Ugm">
+                                        <rect key="frame" x="20" y="20" width="179" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3ae-o6-DvQ"/>
+                                            <constraint firstAttribute="width" constant="179" id="9fV-7b-SnN"/>
+                                            <constraint firstAttribute="height" constant="30" id="ZvH-xy-fyU"/>
+                                            <constraint firstAttribute="width" constant="148" id="lav-G3-PZ8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3ae-o6-DvQ"/>
+                                                <exclude reference="lav-G3-PZ8"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDK-bV-fW4" customClass="MaterialTextField" customModule="burgydev_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="70" width="519" height="35"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="avw-nT-L26"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JYE-UE-z9X" customClass="MaterialTextField" customModule="burgydev_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="125" width="519" height="35"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="8b3-Am-Ldk"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-4r-6RI" customClass="MaterialButton" customModule="burgydev_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="165" y="210" width="229" height="38"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Npn-AD-QyG"/>
+                                            <constraint firstAttribute="width" constant="218" id="OHi-nn-MSl"/>
+                                            <constraint firstAttribute="height" constant="44" id="Xbf-ii-LJA"/>
+                                            <constraint firstAttribute="width" constant="229" id="xzA-Sz-D4H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login / Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="OHi-nn-MSl"/>
+                                                <exclude reference="Xbf-ii-LJA"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gRV-mX-Ugm" firstAttribute="leading" secondItem="OJP-hO-bEy" secondAttribute="leading" constant="20" id="AyA-eK-HOy"/>
+                                    <constraint firstItem="ZDK-bV-fW4" firstAttribute="top" secondItem="gRV-mX-Ugm" secondAttribute="bottom" constant="20" id="Nd4-hP-Znl"/>
+                                    <constraint firstItem="Ahy-4r-6RI" firstAttribute="top" secondItem="JYE-UE-z9X" secondAttribute="bottom" constant="50" id="T3f-BA-3hq"/>
+                                    <constraint firstItem="JYE-UE-z9X" firstAttribute="trailing" secondItem="ZDK-bV-fW4" secondAttribute="trailing" id="ese-st-g4s"/>
+                                    <constraint firstItem="JYE-UE-z9X" firstAttribute="top" secondItem="ZDK-bV-fW4" secondAttribute="bottom" constant="20" id="fkn-WJ-apU"/>
+                                    <constraint firstItem="JYE-UE-z9X" firstAttribute="leading" secondItem="ZDK-bV-fW4" secondAttribute="leading" id="gUA-5X-YYn"/>
+                                    <constraint firstItem="ZDK-bV-fW4" firstAttribute="leading" secondItem="gRV-mX-Ugm" secondAttribute="leading" id="l4f-ew-9aF"/>
+                                    <constraint firstItem="gRV-mX-Ugm" firstAttribute="top" secondItem="OJP-hO-bEy" secondAttribute="top" constant="20" id="rCn-dj-9Nt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDK-bV-fW4" secondAttribute="trailing" constant="21" id="uBK-Qs-N7a"/>
+                                    <constraint firstItem="Ahy-4r-6RI" firstAttribute="centerX" secondItem="OJP-hO-bEy" secondAttribute="centerX" id="zba-Us-irk"/>
+                                    <constraint firstAttribute="height" constant="128" id="zqb-uP-k8p"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zqb-uP-k8p"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="OJP-hO-bEy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8fx-q8-398"/>
                             <constraint firstAttribute="trailing" secondItem="jXw-1g-ftz" secondAttribute="trailing" id="D18-mI-a6v"/>
                             <constraint firstItem="BsH-dZ-EqO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wyq-Oo-xwK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OJP-hO-bEy" secondAttribute="bottom" constant="20" id="XEq-ju-ArM"/>
+                            <constraint firstItem="OJP-hO-bEy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nFg-3r-eJu"/>
+                            <constraint firstItem="OJP-hO-bEy" firstAttribute="top" secondItem="BsH-dZ-EqO" secondAttribute="bottom" constant="20" id="oui-ff-dNS"/>
                             <constraint firstItem="BsH-dZ-EqO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rQY-p9-QmV"/>
                             <constraint firstItem="jXw-1g-ftz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uVS-u5-5UN"/>
                             <constraint firstItem="jXw-1g-ftz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vjw-2A-LKz"/>
@@ -52,4 +221,8 @@
             <point key="canvasLocation" x="565" y="539"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="code-icon-logo" width="318" height="281"/>
+        <image name="fb-icon" width="65" height="65"/>
+    </resources>
 </document>

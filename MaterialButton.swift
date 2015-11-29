@@ -1,15 +1,15 @@
 //
-//  MaterialView.swift
+//  MaterialButton.swift
 //  burgydev-showcase
 //
-//  Created by Yong Jae Kim on 2015. 11. 29..
+//  Created by Yong Jae Kim on 2015. 11. 30..
 //  Copyright © 2015년 Yong Jae Kim. All rights reserved.
 //
 
 import UIKit
 
-class MaterialView: UIView {
-
+class MaterialButton: UIButton {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

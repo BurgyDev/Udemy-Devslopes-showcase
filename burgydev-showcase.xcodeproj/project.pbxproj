@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61C91431C0B6BE10099F5AB /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */; };
+		A655FC821C0B67360036FE1A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FC811C0B67360036FE1A /* MaterialButton.swift */; };
 		A6FD6EE31C0B39E6005EF8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */; };
 		A6FD6EE51C0B39E6005EF8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */; };
 		A6FD6EE81C0B39E6005EF8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD6EE61C0B39E6005EF8DE /* Main.storyboard */; };
@@ -17,9 +19,12 @@
 		A6FD6EFE1C0B3A32005EF8DE /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6FD6EFA1C0B3A32005EF8DE /* NotoSans-Italic.ttf */; };
 		A6FD6EFF1C0B3A32005EF8DE /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6FD6EFB1C0B3A32005EF8DE /* NotoSans-Regular.ttf */; };
 		A6FD6F011C0B435C005EF8DE /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6F001C0B435C005EF8DE /* MaterialView.swift */; };
+		A6FD6F041C0B5986005EF8DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6F031C0B5986005EF8DE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		A655FC811C0B67360036FE1A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		A6FD6EDF1C0B39E6005EF8DE /* burgydev-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "burgydev-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "burgydev-showcase/ViewController.swift"; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		A6FD6EFA1C0B3A32005EF8DE /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		A6FD6EFB1C0B3A32005EF8DE /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		A6FD6F001C0B435C005EF8DE /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		A6FD6F031C0B5986005EF8DE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				A6FD6EF61C0B3A17005EF8DE /* View */,
 				A6FD6EF41C0B3A00005EF8DE /* Controller */,
 				A6FD6EF71C0B3A1C005EF8DE /* Resources */,
+				A6FD6F021C0B597C005EF8DE /* Util */,
 				A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */,
 				A6FD6EE91C0B39E6005EF8DE /* Assets.xcassets */,
 				A6FD6EEE1C0B39E6005EF8DE /* Info.plist */,
@@ -78,6 +85,9 @@
 		A6FD6EF41C0B3A00005EF8DE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6FD6EEB1C0B39E6005EF8DE /* LaunchScreen.storyboard */,
+				A6FD6EE61C0B39E6005EF8DE /* Main.storyboard */,
+				A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -86,7 +96,6 @@
 		A6FD6EF51C0B3A12005EF8DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -95,9 +104,9 @@
 		A6FD6EF61C0B3A17005EF8DE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6FD6EE61C0B39E6005EF8DE /* Main.storyboard */,
-				A6FD6EEB1C0B39E6005EF8DE /* LaunchScreen.storyboard */,
 				A6FD6F001C0B435C005EF8DE /* MaterialView.swift */,
+				A655FC811C0B67360036FE1A /* MaterialButton.swift */,
+				A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */,
 			);
 			name = View;
 			path = ..;
@@ -113,6 +122,14 @@
 			);
 			name = Resources;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A6FD6F021C0B597C005EF8DE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD6F031C0B5986005EF8DE /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61C91431C0B6BE10099F5AB /* MaterialTextField.swift in Sources */,
 				A6FD6F011C0B435C005EF8DE /* MaterialView.swift in Sources */,
 				A6FD6EE51C0B39E6005EF8DE /* ViewController.swift in Sources */,
 				A6FD6EE31C0B39E6005EF8DE /* AppDelegate.swift in Sources */,
+				A6FD6F041C0B5986005EF8DE /* Constants.swift in Sources */,
+				A655FC821C0B67360036FE1A /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +364,7 @@
 				A6FD6EF31C0B39E6005EF8DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

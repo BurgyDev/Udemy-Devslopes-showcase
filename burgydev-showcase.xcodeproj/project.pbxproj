@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D01D0692B781E5E12CADAD /* Pods_burgydev_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0298E9D85A5F89E328345FCC /* Pods_burgydev_showcase.framework */; };
 		A61C91431C0B6BE10099F5AB /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */; };
 		A655FC821C0B67360036FE1A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FC811C0B67360036FE1A /* MaterialButton.swift */; };
+		A669E5BC1C0C3CE8008131C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669E5B91C0C3CE8008131C3 /* Bolts.framework */; };
+		A669E5BD1C0C3CE8008131C3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669E5BA1C0C3CE8008131C3 /* FBSDKCoreKit.framework */; };
+		A669E5BE1C0C3CE8008131C3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669E5BB1C0C3CE8008131C3 /* FBSDKLoginKit.framework */; };
 		A6FD6EE31C0B39E6005EF8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */; };
 		A6FD6EE51C0B39E6005EF8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */; };
 		A6FD6EE81C0B39E6005EF8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD6EE61C0B39E6005EF8DE /* Main.storyboard */; };
@@ -23,8 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0298E9D85A5F89E328345FCC /* Pods_burgydev_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_burgydev_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14245827D56EFD8F72EABE02 /* Pods-burgydev-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-burgydev-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-burgydev-showcase/Pods-burgydev-showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		634A68DDA916E0A278161A38 /* Pods-burgydev-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-burgydev-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-burgydev-showcase/Pods-burgydev-showcase.release.xcconfig"; sourceTree = "<group>"; };
 		A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		A655FC811C0B67360036FE1A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		A669E5B91C0C3CE8008131C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A669E5BA1C0C3CE8008131C3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A669E5BB1C0C3CE8008131C3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A6FD6EDF1C0B39E6005EF8DE /* burgydev-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "burgydev-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FD6EE41C0B39E6005EF8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "burgydev-showcase/ViewController.swift"; sourceTree = "<group>"; };
@@ -45,17 +55,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A669E5BC1C0C3CE8008131C3 /* Bolts.framework in Frameworks */,
+				A669E5BD1C0C3CE8008131C3 /* FBSDKCoreKit.framework in Frameworks */,
+				A669E5BE1C0C3CE8008131C3 /* FBSDKLoginKit.framework in Frameworks */,
+				19D01D0692B781E5E12CADAD /* Pods_burgydev_showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552EED27D0296CD186CC5CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0298E9D85A5F89E328345FCC /* Pods_burgydev_showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A669E5B81C0C3CCF008131C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A669E5B91C0C3CE8008131C3 /* Bolts.framework */,
+				A669E5BA1C0C3CE8008131C3 /* FBSDKCoreKit.framework */,
+				A669E5BB1C0C3CE8008131C3 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6FD6ED61C0B39E6005EF8DE = {
 			isa = PBXGroup;
 			children = (
 				A6FD6EE11C0B39E6005EF8DE /* burgydev-showcase */,
 				A6FD6EE01C0B39E6005EF8DE /* Products */,
+				BCDAE966797F88E372022DE5 /* Pods */,
+				552EED27D0296CD186CC5CFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +109,7 @@
 				A6FD6EF41C0B3A00005EF8DE /* Controller */,
 				A6FD6EF71C0B3A1C005EF8DE /* Resources */,
 				A6FD6F021C0B597C005EF8DE /* Util */,
+				A669E5B81C0C3CCF008131C3 /* Frameworks */,
 				A6FD6EE21C0B39E6005EF8DE /* AppDelegate.swift */,
 				A6FD6EE91C0B39E6005EF8DE /* Assets.xcassets */,
 				A6FD6EEE1C0B39E6005EF8DE /* Info.plist */,
@@ -132,6 +167,15 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		BCDAE966797F88E372022DE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14245827D56EFD8F72EABE02 /* Pods-burgydev-showcase.debug.xcconfig */,
+				634A68DDA916E0A278161A38 /* Pods-burgydev-showcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FD6EF11C0B39E6005EF8DE /* Build configuration list for PBXNativeTarget "burgydev-showcase" */;
 			buildPhases = (
+				B98194E9D90CA0842777A61C /* Check Pods Manifest.lock */,
 				A6FD6EDB1C0B39E6005EF8DE /* Sources */,
 				A6FD6EDC1C0B39E6005EF8DE /* Frameworks */,
 				A6FD6EDD1C0B39E6005EF8DE /* Resources */,
+				87B3F912F9F252D82C21E610 /* Embed Pods Frameworks */,
+				72C39A50662434461DB09CD8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +248,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72C39A50662434461DB09CD8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-burgydev-showcase/Pods-burgydev-showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B3F912F9F252D82C21E610 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-burgydev-showcase/Pods-burgydev-showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B98194E9D90CA0842777A61C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6FD6EDB1C0B39E6005EF8DE /* Sources */ = {
@@ -325,22 +420,34 @@
 		};
 		A6FD6EF21C0B39E6005EF8DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14245827D56EFD8F72EABE02 /* Pods-burgydev-showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/burgydev-showcase",
+				);
 				INFOPLIST_FILE = "burgydev-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "burgyDev.burgydev-showcase";
+				PRODUCT_BUNDLE_IDENTIFIER = burgyDev.burgydev.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		A6FD6EF31C0B39E6005EF8DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634A68DDA916E0A278161A38 /* Pods-burgydev-showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/burgydev-showcase",
+				);
 				INFOPLIST_FILE = "burgydev-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "burgyDev.burgydev-showcase";
+				PRODUCT_BUNDLE_IDENTIFIER = burgyDev.burgydev.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

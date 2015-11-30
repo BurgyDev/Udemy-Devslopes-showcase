@@ -97,6 +97,9 @@
                                                         <exclude reference="lux-sR-9hi"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nl5-ey-Nrl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>

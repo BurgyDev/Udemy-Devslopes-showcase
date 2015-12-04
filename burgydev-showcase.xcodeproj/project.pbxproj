@@ -10,6 +10,7 @@
 		19D01D0692B781E5E12CADAD /* Pods_burgydev_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0298E9D85A5F89E328345FCC /* Pods_burgydev_showcase.framework */; };
 		A60B6D1F1C0C9D5D0078798E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B6D1E1C0C9D5D0078798E /* DataService.swift */; };
 		A61C91431C0B6BE10099F5AB /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */; };
+		A63221711C10982D00F40230 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63221701C10982D00F40230 /* Post.swift */; };
 		A655FC821C0B67360036FE1A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FC811C0B67360036FE1A /* MaterialButton.swift */; };
 		A669E5BC1C0C3CE8008131C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669E5B91C0C3CE8008131C3 /* Bolts.framework */; };
 		A669E5BD1C0C3CE8008131C3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669E5BA1C0C3CE8008131C3 /* FBSDKCoreKit.framework */; };
@@ -35,6 +36,7 @@
 		634A68DDA916E0A278161A38 /* Pods-burgydev-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-burgydev-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-burgydev-showcase/Pods-burgydev-showcase.release.xcconfig"; sourceTree = "<group>"; };
 		A60B6D1E1C0C9D5D0078798E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A61C91421C0B6BE10099F5AB /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		A63221701C10982D00F40230 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A655FC811C0B67360036FE1A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		A669E5B91C0C3CE8008131C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A669E5BA1C0C3CE8008131C3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		A6FD6EF51C0B3A12005EF8DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A63221701C10982D00F40230 /* Post.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -328,6 +331,7 @@
 				A6FD6EE31C0B39E6005EF8DE /* AppDelegate.swift in Sources */,
 				A6FD6F041C0B5986005EF8DE /* Constants.swift in Sources */,
 				A655FC821C0B67360036FE1A /* MaterialButton.swift in Sources */,
+				A63221711C10982D00F40230 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

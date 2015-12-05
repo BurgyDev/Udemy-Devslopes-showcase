@@ -14,7 +14,9 @@ class MaterialTextField: UITextField {
         super.awakeFromNib()
         self.layer.cornerRadius = 2.0
         self.layer.borderColor = UIColor(red: SHADOW_COLOR, green: SHADOW_COLOR, blue: SHADOW_COLOR, alpha: 0.5).CGColor
-        self.layer.borderWidth = 1.0
+        self.layer.borderWidth = 0.5
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
         
     }
     
